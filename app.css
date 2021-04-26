@@ -1,0 +1,248 @@
+html {
+    font-size: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:root {
+    --light-grey: hsl(0, 0%, 95%);
+    --white: hsl(0, 0%, 100%, 0.75);
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+
+}
+
+body {
+    background-color: var(--light-grey);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    width: 80%;
+    max-width: 800px;
+    height: 65%;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+/*first section*/
+
+.sedan {
+    background-color: var(--orange);
+}
+
+.orange {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    margin:  auto;
+}
+
+.orange img {
+    width: 35%;
+}
+
+.orange h1 {
+    color: var(--light-grey);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+}
+
+.orange button {
+    background-color: var(--light-grey);
+    width: 77%;
+    padding: .9em;
+    border-radius: 20px;
+    color: var(--orange);
+    border: none;
+    font-size: 11px;
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
+
+.orange p {
+    color: var(--white);
+    line-height: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    padding-bottom: 35px;
+}
+
+/*second section*/
+
+.suvs {
+    background-color: var(--cyan);
+}
+
+.cyan {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    margin:  auto;
+}
+
+.cyan img {
+    width: 35%;
+}
+
+.cyan h1 {
+    color: var(--light-grey);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+}
+
+.cyan button {
+    background-color: var(--light-grey);
+    width: 77%;
+    padding: .9em;
+    border-radius: 20px;
+    color: var(--cyan);
+    border: none;
+    font-size: 11px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.cyan p {
+    color: var(--white);
+    line-height: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    padding-bottom: 35px;
+}
+
+/*third section*/
+
+.luxury {
+    background-color: var(--dark-cyan);
+}
+
+.dark-cyan {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    margin:  auto;
+}
+
+.dark-cyan img {
+    width: 35%;
+}
+
+.dark-cyan h1 {
+    color: var(--light-grey);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+}
+
+.dark-cyan button {
+    background-color: var(--light-grey);
+    width: 77%;
+    padding: .9em;
+    border-radius: 20px;
+    color: var(--dark-cyan);
+    border: none;
+    font-size: 11px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.dark-cyan p {
+    color: var(--white);
+    line-height: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    padding-bottom: 35px;
+}
+
+/* mobile styles*/
+
+@media screen and (max-width: 376px) {
+    main {
+        flex-direction: column;
+        width: 80%;
+        height: 98%;
+    }
+
+    /*first section*/
+
+    .orange {
+        width: 70%;
+        margin-top: 15px;
+    }
+
+    
+    .orange img {
+        width: 25%;
+    }
+
+    .orange h1 {
+        font-size: 25px;
+    }
+
+
+    .orange button {
+        margin-bottom: 15px;
+        width: 60%;
+        transform: translate(0px, -20px);
+    }
+
+    /*second section*/
+
+    .cyan {
+        width: 70%;
+        margin-top: 15px;
+    }
+
+    .cyan img {
+        width: 25%;
+    }
+
+    .cyan h1 {
+        font-size: 25px;
+    }
+
+    .cyan button {
+        margin-bottom: 15px;
+        width: 60%;
+        transform: translate(0px, -20px);
+    }
+    
+
+    /*third section*/
+
+    .dark-cyan {
+        width: 70%;
+        margin-top: 15px;
+    }
+
+    .dark-cyan img{
+        width: 25%;
+    }
+
+    .dark-cyan h1 {
+        font-size: 25px;
+    }
+
+    .dark-cyan button {
+        margin-bottom: 15px;
+        width: 60%;
+        transform: translate(0px, -20px);
+    }
+}
+
